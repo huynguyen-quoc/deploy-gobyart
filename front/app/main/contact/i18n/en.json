@@ -1,0 +1,13 @@
+{
+    "ABOUT": {
+        "INFO":  {
+            "HEIGHT" : "Height",
+            "WAIST" : "Waist",
+            "BUST" : "Bust",
+            "HIPS" : "Hips",
+            "HAIR" : "Hair"
+        },
+        "ADD_SHORT_LIST" : "ADD TO SHORTLIST",
+        "REMOVE_SHORT_LIST" : "REMOVED TO SHORTLIST"
+    }
+}

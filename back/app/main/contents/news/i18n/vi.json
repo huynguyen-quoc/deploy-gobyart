@@ -1,0 +1,16 @@
+{
+    "NEWS": {
+        "NEWS_NAV": "Tin Tức",
+        "SHORT_INFO": "Nội Dung Cơ Bản",
+        "PAGE_TITLE" : "Tin Tức",
+        "TOTAL_MEMBER" : "Tổng số tin",
+        "CONTENT_INFO" : "Nội Dung Chính",
+        "NEWS_DETAIL" : "Tin Tức GOBYART",
+        "DISMISS" : "Đóng",
+        "TITLE" : "Tiều Đề",
+        "SUBJECT" : "Thông Tin Ngắn",
+        "SAVE" : "Lưu",
+        "REQUIRED" : "Xin hãy nhập thông tin",
+        "SET_IMAGE_NEWS" : "Ảnh Tin Tức"
+    }
+}

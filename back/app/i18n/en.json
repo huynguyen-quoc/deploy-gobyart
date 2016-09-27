@@ -1,0 +1,10 @@
+{
+    "APP": {
+        "DISMISS": "Dismiss",
+        "ERRORS": {
+            "INTERNAL_SERVER_ERROR" : "There are some problems has been occured.",
+            "UNAUTHORIZED" : "Invalid user name or password",
+            "UNAUTHORIZED_RETRY" : "You had try to login 5 times. Please try again after 5 minutes."
+        }
+    }
+}

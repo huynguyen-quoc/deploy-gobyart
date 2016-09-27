@@ -1,0 +1,13 @@
+{
+    "ABOUT": {
+      "INFO":  {
+            "HEIGHT" : "Chiều Cao",
+            "WAIST" : "Hông",
+            "BUST" : "Ngực",
+            "HIPS" : "Eo",
+            "HAIR" : "Tóc"
+        },
+        "ADD_SHORT_LIST" : "TÔI CHỌN BẠN",
+        "REMOVE_SHORT_LIST" : "HỦY CHỌN"
+    }
+}

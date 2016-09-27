@@ -1,0 +1,8 @@
+<form name="formBasic" autocomplete="off" novalidate>
+       <md-input-container class="md-icon-float md-block" ng-repeat="siteOption in vm.siteOption track by siteOption.site_option_name">
+            <label translate="SETTING_GENERAL.{{siteOption.site_option_name}}">Name </label>
+            <input ng-model="vm.siteOptionValue[siteOption.site_option_name]" type="text" ng-if="siteOption.site_option_input === 'text'">
+            <textarea ng-model="vm.siteOptionValue[siteOption.site_option_name]" name="subject" md-maxlength="1000" rows="10" md-select-on-focus="" ng-if="siteOption.site_option_input !== 'text'"></textarea>
+        </md-input-container>
+</form>
+

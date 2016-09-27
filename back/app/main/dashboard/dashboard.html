@@ -1,0 +1,82 @@
+<div id="dashboard" class="page-layout simple right-sidenav" layout="row">
+  <!-- CENTER -->
+  <div class="center" flex ms-scroll>
+
+      <!-- HEADER -->
+      <div class="header md-accent-bg" layout="column" layout-align="space-between">
+          <div layout="row" layout-align="space-between">
+              <div>
+                  <span class="md-display-1 font-weight-300">{{ vm.wellcomeMessage() }}, {{::vm.user_profile.full_name }} </span>
+              </div>
+
+              <div class="toolbar">
+                  <md-button class="md-icon-button sidenav-toggle" ng-click="vm.toggleSidenav('sidenav')" hide-gt-md
+                             aria-label="Toggle sidenav">
+                      <md-icon md-font-icon="icon-menu" class="icon"></md-icon>
+                  </md-button>
+              </div>
+          </div>
+
+      </div>
+      <!-- / HEADER -->
+
+      <!-- CONTENT -->
+      <div class="content">
+
+      </div>
+
+  </div>
+  <!-- / CENTER -->
+
+  <!-- SIDENAV -->
+  <md-sidenav class="sidenav md-sidenav-right" md-is-locked-open="$mdMedia('gt-md')" md-component-id="sidenav"
+              ms-scroll ms-sidenav-helper>
+
+      <!-- WIDGET GROUP -->
+      <div class="widget-group">
+
+          <!-- NOW WIDGET -->
+          <ms-widget flippable="false" class="sidenav-widget">
+
+              <!-- Front -->
+              <ms-widget-front>
+
+                  <div class="pl-16 pr-8 pv-16" layout="row" layout-align="space-between center">
+                      <div class="h3">{{vm.nowWidget.now.weekDay}},
+                          {{vm.nowWidget.now.hour}}:{{vm.nowWidget.now.minute}}:{{vm.nowWidget.now.second}}
+                      </div>
+                  </div>
+
+                  <div class="p-16 pb-24" layout="column" layout-align="center center">
+                      <div class="h1 secondary-text">
+                          <span>{{vm.nowWidget.now.month}}</span>
+                      </div>
+
+                      <div class="font-size-72 line-height-88 secondary-text font-weight-400">
+                          {{vm.nowWidget.now.day}}
+                      </div>
+
+                      <div class="h1 secondary-text">
+                          <span>{{vm.nowWidget.now.year}}</span>
+                      </div>
+                  </div>
+
+                  <md-divider></md-divider>
+
+              </ms-widget-front>
+              <!-- / Front -->
+
+          </ms-widget>
+          <!-- / NOW WIDGET -->
+
+
+
+
+      </div>
+      <!-- / WIDGET GROUP -->
+
+  </md-sidenav>
+  <!-- / SIDENAV -->
+
+
+</div>

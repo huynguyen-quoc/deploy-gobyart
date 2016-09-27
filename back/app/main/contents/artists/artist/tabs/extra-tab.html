@@ -1,0 +1,14 @@
+<form name="form-artist-extra">
+    <div layout-gt-sm="row"  layout-align="start center">
+        <md-input-container ng-repeat="option in vm.extraOptions track by option.site_option_name"  class="md-block" flex-gt-sm ng-if="$index % 2 === 0">
+            <label translate="ARTISTS.{{::option.site_option_name}}">{{::option.site_option_name}}</label>
+            <input type="text" ng-model="vm.artist.artist_information[option.site_option_name.toLowerCase()]">
+        </md-input-container>
+    </div>
+    <div layout-gt-sm="row"  layout-align="start center">
+        <md-input-container ng-repeat="option in vm.extraOptions track by option.site_option_name"  class="md-block" flex-gt-sm ng-if="$index % 2 !== 0">
+            <label translate="ARTISTS.{{::option.site_option_name}}"">{{::option.site_option_name}}</label>
+            <input type="text" ng-model="vm.artist.artist_information[option.site_option_name.toLowerCase()]">
+        </md-input-container>
+    </div>
+</form>

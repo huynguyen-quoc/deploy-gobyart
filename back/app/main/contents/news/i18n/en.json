@@ -1,0 +1,16 @@
+{
+    "NEWS": {
+        "NEWS_NAV": "News",
+        "SHORT_INFO": "Short Info",
+        "PAGE_TITLE" : "News",
+        "TOTAL_MEMBER" : "Total News",
+        "CONTENT_INFO" : "Main Content",
+        "NEWS_DETAIL" : "GobyArt News",
+        "DISMISS" : "Dismiss",
+        "TITLE" : "Title",
+        "SUBJECT" : "Short Content",
+        "SAVE" : "Save",
+        "REQUIRED" : "This field is required",
+        "SET_IMAGE_NEWS" : "Set News Image"
+    }
+}

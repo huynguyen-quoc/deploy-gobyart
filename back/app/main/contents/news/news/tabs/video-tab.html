@@ -1,0 +1,65 @@
+
+<div id="artist-image-uploader"
+        flow-init="vm.ngFlowVideoOptions"
+        flow-name="vm.ngFlow.flowVideo"
+        flow-files-submitted="vm.upload($file,'video_link')"
+        flow-file-added="vm.fileAdded($file, 'video_link')"
+        flow-file-success="vm.fileSuccess($file, $message, 'video')"
+        flow-complete="vm.uploadComplete()"
+        flow-drop
+        flow-drag-enter="vm.dropping=true"
+        flow-drag-leave="vm.dropping=false"
+        ng-class="{'dropping':vm.dropping}">
+
+    <div class="drop-text hint-text" layout="row" layout-align="center center">
+        <span translate="ARTISTS.DROP_TO_UPLOAD">Drop to upload</span>
+    </div>
+
+    <div class="upload-button" layout="column" layout-align="center center">
+        <md-button class="md-accent md-icon-button md-raised" flow-btn  aria-label="Upload Image" translate-attr-aria-label="ARTISTS.UPLOAD_BTN" flow-attrs="{accept:'image/jpg, image/png'}">
+            <md-icon md-font-icon="icon-cloud-upload"></md-icon>
+        </md-button>
+        <span class="secondary-text mt-8" translate="ARTISTS.UPLOAD_DESCRIPTION">You can also drop images here to upload. Only PNG, JPG</span>
+    </div>
+
+    <div layout="row" layout-align="start end" layout-wrap>
+       
+            <div   ng-repeat="image in vm.images track by $index" ng-if="image.file_type ==='video_link' || image.default " ng-switch="image.uploading">
+                <div class="artist-image uploading" ng-switch-when="true" layout="row"
+                        layout-align="start center">
+                    <div class="overlay" layout="column" layout-align="center center">
+                        <md-progress-linear md-mode="determinate" class="md-warn"
+                                            value="{{image.file.progress() * 100}}">
+                        </md-progress-linear>
+                    </div>
+                    <img class="media" flow-img="image.file">
+                </div>
+
+                <div class="artist-image"  ng-click="vm.selectImage($event, image)" ng-class="{ 'selected' : image.selected, 'artist-avatar' : (image.file_id === vm.artist.avatar.file_id) }" ng-switch-default layout="row"
+                        layout-align="center center">
+                    <div class="selected-box"></div>
+                    <div class="avatar-image-box">
+                        <md-button class="md-accent md-icon-button md-raised" aria-label="Avatar Default">
+                            <md-icon md-font-icon="icon-check-circle"></md-icon>
+                        </md-button>
+                    </div>
+                    <img class="media" ng-src="{{image.url}}">
+                
+                </div>
+                <div flex="" class="p-c-5" >
+                    <form name="formVideo">
+                        <md-input-container class="md-block" flex>
+                            <label translate="ARTISTS.VIDEO_LINK" ng-if="!image.default">Video Link</label>
+                            <textarea type="text" ng-pattern="/^https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,}$/" aria-label="Video Link"  name="link{{$index}}"  ng-disabled="image.default" rows="5" ng-model="image['link']"></textarea>
+                            <div ng-messages="formVideo['link' + $index].$error" ng-if="!image.default" role="alert">
+                                <div ng-message="pattern">
+                                    <span translate="ARTISTS.ERRORS.INVALID_URL">Invalid Link Url</span>
+                                </div>
+                            </div>
+                        </md-input-container>
+                    </form>
+                </div>
+            </div>
+        
+    </div>
+</div>

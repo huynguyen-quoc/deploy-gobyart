@@ -1,0 +1,8 @@
+{
+    "DASHBOARD": {
+        "DASHBOARD_NAV": "Dashboard",
+        "AFTERNOON" : "Good Afternoon",
+        "MORNING" : "Good Morning",
+        "EVENING" : "Good Evening"
+    }
+}

@@ -1,0 +1,14 @@
+<form name="formLocation" autocomplete="off" novalidate>
+     <div layout-gt-sm="row" layout-align="start center">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label translate="SETTING_LOCATION.LONGITUDE">First Name</label>
+            <input type="text"  name="longitude" ng-model="vm.siteOptionValue.LOCATION_LONGITUDE" ng-change="vm.updateMap()" ng-model-options="{debounce:400}">
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm>
+            <label translate="SETTING_LOCATION.LATITUDE">Last Name</label>
+            <input type="text"  name="latitude" ng-model="vm.siteOptionValue.LOCATION_LATITUDE"  ng-change="vm.updateMap()" ng-model-options="{debounce:400}">
+        </md-input-container>
+    </div>
+</form>
+

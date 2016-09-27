@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.gobyart.frontend.web"/>
+
+    <context:property-placeholder location="classpath:/server.properties" system-properties-mode="OVERRIDE" />
+
+    <bean id="serverConfig" class="com.gobyart.frontend.web.models.ServerConfig"   >
+        <property name="ip" value="${server.ip}"/>
+        <property name="port" value="${server.port}" />
+        <property name="keepAlive" value="${server.keepAlive}"/>
+        <property name="threads" value="${server.thread}"/>
+        <property name="workers" value="${server.worker}"/>
+        <property name="timeout" value="${server.timeout}"/>
+        <property name="key" value="${server.key}"/>
+        <property name="cookieHttpOnly" value="${server.cookieHttpOnly}" />
+        <property name="cookieName" value="${server.cookieName}" />
+        <property name="cookiePath" value="${server.cookiePath}" />
+        <property name="cookieSecure" value="${server.cookieSecure}" />
+        <property name="csrfKey" value="${server.csrfKey}" />
+    </bean>
+
+    <bean id="apiConfig" class="com.gobyart.frontend.web.models.ApiConfig" >
+        <property name="uri" value="${api.mpay.uri}"/>
+    </bean>
+
+
+</beans>

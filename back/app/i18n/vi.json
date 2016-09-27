@@ -1,0 +1,10 @@
+{
+    "APP": {
+        "DISMISS": "Dismiss",
+        "ERRORS": {
+            "INTERNAL_SERVER_ERROR" : "There are some problems has been occured.",
+            "UNAUTHORIZED" : "Tài khoản hoặc mật khẩu không chính xác.",
+            "UNAUTHORIZED_RETRY" : "Đăng nhập sai quá 5 lần . Xin hãy thử lại sau 5 phút"
+        }
+    }
+}

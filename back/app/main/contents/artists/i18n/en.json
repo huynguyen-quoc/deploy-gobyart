@@ -1,0 +1,51 @@
+{
+    "ARTISTS": {
+        "ARTIST_NAV": "Artists",
+        "ARTIST_TITLE": "List Artist",
+        "ARTIST_DETAIL" : "Artist Detail",
+        "BASIC_INFO" : "Basic Info",
+        "ARTIST_IMAGE" : "Images",
+        "EXTRA_INFORMATION" : "Extra Information",
+        "SEO" : "SEO",
+        "FIRST_NAME" : "First Name",
+        "LAST_NAME" : "Last Name",
+        "FULL_NAME" : "Full Name",
+        "DESCRIPTION" : "Description",
+        "DATE_OF_BIRTH" : "Birth Day",
+        "INVALID_DATE" : "Invalid Date Format",
+        "REQUIRED" : "This field is required",
+        "ARTIST_TYPE" : "Artist Type",
+        "MUSIC_CATEGORY" : "Music Category",
+        "UPLOAD_DESCRIPTION" : "You can also drop images here to upload. Only PNG, JPG",
+        "UPLOAD_BTN" : "Upload Image",
+        "SAVE" : "Save",
+        "HEIGHT" : "Height",
+        "WAIST" : "Waist",
+        "HIPS" : "Hips",
+        "HAIR" : "Hair",
+        "BUST" : "Bust",
+        "REMOVE_IMAGE_SUCCESS" : "Removed one file",
+        "YES" : "Yes",
+        "NO" : "No",
+        "REMOVE_IMAGE_TITLE" : "Remove Image?",
+        "REMOVE_IMAGE_TEXT" : "{{ image_name }} will be removed to the trash.",
+        "REMOVE_IMAGE_ARIA" : "Remove Image",
+        "UPDATE_ARTIST_TITLE" : "Update Artist?",
+        "UPDATE_ARTIST_TEXT" : "Artist {{ artist_name }} will be updated by entered information.",
+        "UPDATE_ARTIST_ARIA" : "Update Artist",
+        "UPDATE_ARTIST_SUCCESS" : "Artist {{ artist_name }} has been updated",
+        "ARTIST_VIDEO" : "Video",
+        "REMOVE_IMAGE" : "Remove File",
+        "SET_AS_AVATAR" : "Set As Avatar",
+        "VIDEO_LINK" : "Video Link",
+        "SEO_DATA" : {
+            "KEYWORDS" : "Keywords",
+            "META" : "Meta"
+        },
+        "ERRORS" : {
+            "INTERNAL_SERVER_ERROR" : "There are some problems has been occured. Please contact administrator.",
+            "INVALID_URL" : "Invalid URL format."
+        },
+        "DISMISS" : "Dismiss"
+    }
+}

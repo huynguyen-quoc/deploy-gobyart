@@ -1,0 +1,22 @@
+{
+    "LOGIN": {
+        "TITLE": "Đăng Nhập Tài Khoản Quản Trị",
+        "USER_NAME": "Tên Đăng Nhập",
+        "PASSWORD": "Mật Khẩu",
+        "REMEMBER_ME": "Nhớ thông tin tài khoản",
+        "INTRO_TITLE" : "Chào mừng bạn đến với hệ thống quản trị của GOBY ART!",
+        "FORGOT_PASSWORD": "Quên mật khẩu?",
+        "LOG_IN": "ĐĂNG NHẬP",
+        "OR": "HOẶC",
+        "DISMISS" : "Đóng",
+        "DESCRIPTION" : "GobyArt Management System",
+        "ERRORS": {
+            "USER_NAME_REQUIRED": "Xin hãy nhập tên đăng nhập",
+            "PASSWORD_REQUIRED": "Xin hãy nhập mật khẩu",
+            "UNAUTHORIZED" : "Tài khoản hoặc mật khẩu không chính xác.",
+            "UNAUTHORIZED_RETRY" : "Đăng nhập sai quá 5 lần . Xin hãy thử lại sau 5 phút",
+            "INTERNAL" : "Có lỗi xảy ra trong hệ thống. Xin hãy liên hệ quản trị viên."
+        }
+    }
+}
+

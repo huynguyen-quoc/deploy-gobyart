@@ -1,0 +1,77 @@
+<form name="formBasic" autocomplete="off" novalidate>
+    <div layout-gt-sm="row" layout-align="start center">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label translate="ARTISTS.FIRST_NAME">First Name</label>
+            <input type="text"  name="first_name" ng-model="vm.artist.first_name" class="capitalize" required autofocus>
+            <div ng-messages="formBasic.first_name.$error" role="alert">
+                <div ng-message="required">
+                    <span translate="ARTISTS.REQUIRED">First Name is required</span>
+                </div>
+            </div>
+        </md-input-container>
+
+        <md-input-container class="md-block" flex-gt-sm>
+            <label translate="ARTISTS.LAST_NAME">Last Name</label>
+            <input type="text"  name="last_name" ng-model="vm.artist.last_name" class="capitalize" required>
+            <div ng-messages="form-artist-basic.last_name.$error" role="alert">
+                <div ng-message="required">
+                    <span translate="ARTISTS.REQUIRED">Last Name is required</span>
+                </div>
+            </div>
+        </md-input-container>
+    </div>
+    <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+            <label translate="ARTISTS.FULL_NAME">Full Name</label>
+            <input type="text"  name="full_name" ng-model="vm.artist.full_name" class="capitalize" required>
+            <div ng-messages="formBasic.full_name.$error"  role="alert">
+                <div ng-message="required">
+                    <span translate="ARTISTS.REQUIRED">Full Name is required</span>
+                </div>
+            </div>
+        </md-input-container>
+        <!--<md-input-container>
+            <label translate="ARTISTS.DATE_OF_BIRTH">Date Of Birth</label>
+            <md-datepicker name="birth_day" ng-model="vm.artist.birth_day_date"></md-datepicker>
+            <div ng-messages="formBasic.birth_day.$error" role="alert">
+                <div ng-message="valid">
+                    <span translate="ARTISTS.INVALID_DATE">Birth day invalid format</span>
+                </div>
+            </div>
+        </md-input-container>-->
+    </div>
+    <div layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm="">
+                <label translate="ARTISTS.ARTIST_TYPE" required>Artist Type</label>
+                <md-select ng-model="vm.artist.music_category.artist_type.artist_type_id" required>
+                    <md-option ng-repeat="type in vm.artistTypes track by type.artist_type_id" value="{{type.artist_type_id}}">
+                        {{type.artist_type_name}}
+                    </md-option>
+                </md-select>
+                <div ng-messages="formBasic.artist_type.$error" role="alert">
+                <div ng-message="required">
+                    <span translate="ARTISTS.REQUIRED">This field is required</span>
+                </div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm="">
+                <label translate="ARTISTS.MUSIC_CATEGORY" required>Music Category</label>
+                <md-select ng-model="vm.artist.music_category.category_id" required>
+                <md-option ng-repeat="category in vm.musicCategories | filter: vm.filterMusicCategory(vm.artist.music_category.artist_type.artist_type_id) track by category.category_id" value="{{category.category_id}}">
+                    {{category.category_name}}
+                </md-option>
+                </md-select>
+                <div ng-messages="formBasic.artist_type.$error" role="alert">
+                <div ng-message="required">
+                    <span translate="ARTISTS.REQUIRED">This field is required</span>
+                </div>
+            </div>
+        </md-input-container>
+    
+    </div>
+    <md-input-container class="md-block" >
+        <label translate="ARTISTS.DESCRIPTION">Description</label>
+        <textarea ng-model="vm.artist.description" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+    </md-input-container>
+</form>
+

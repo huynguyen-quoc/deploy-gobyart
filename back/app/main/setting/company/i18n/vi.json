@@ -1,0 +1,19 @@
+{
+    "SETTING_COMPANY": {
+        "SETTING_COMPANY_NAV": "Thông tin GOBYART",
+         "PAGE_TITLE" : "Thông tin GOBYART",
+        "PAGE_TITLE_DETAIL" : "Thông tin của GOBYART",
+        "DESCRIPTION" : "Mổ tả về GOBYART",
+        "ABOUT_FOOTER" : "Thông tin GOBYART",
+        "ADDRESS_FOOTER" : "Địa chỉ GOBYART",
+        "PHONE" : "Số điện thoại",
+        "SAVE" : "Lưu",
+        "DISMISS" : "Đóng",
+        "SAVE_CONFIRM_TITLE" : "Lưu thông tin?",
+        "SAVE_CONFIRM_TEXT" : "Thông tin thay đổi sẽ được cập nhật vào hệ thống",
+        "SAVE_CONFIRM_ARIA" : "Lưu thông tin",
+        "EDIT_SUCCESS" : "Thông tin đã được cập nhật thành công",
+        "YES" : "Có",
+        "NO" : "Không"
+    }
+}

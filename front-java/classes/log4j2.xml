@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info" name="ma-web" packages="" monitorInterval="30">
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{1.} %L %M - %msg%xEx%n"/>
+        </Console>
+        <RollingFile name="RollingFile" fileName="${sys:log}"
+                     filePattern="${sys:log}-%d{yyyy-MM-dd}.gz">
+            <PatternLayout>
+                <Pattern>%d{HH:mm:ss.SSS} %-5level %c{1.} %L %M - %msg%xEx%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <!--<SizeBasedTriggeringPolicy size="250 MB"/>-->
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <AsyncLogger name="com.gobyart.backend.web" level="info"/>
+        <AsyncRoot level="info">
+            <AppenderRef ref="CONSOLE"/>
+            <!--<AppenderRef ref="RollingFile"/>-->
+        </AsyncRoot>
+    </Loggers>
+</Configuration>

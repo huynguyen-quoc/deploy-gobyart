@@ -1,0 +1,19 @@
+{
+    "SETTING_COMPANY": {
+        "SETTING_COMPANY_NAV": "GOBYART Setting",
+        "PAGE_TITLE" : "General Setting",
+        "PAGE_TITLE_DETAIL" : "General Setting",
+        "DESCRIPTION" : "GOBYART Description",
+        "ABOUT_FOOTER" : "About GOBYART Footer",
+        "ADDRESS_FOOTER" : "Address GOBYART Footer",
+        "PHONE" : "Phone",
+        "SAVE" : "Save",
+        "DISMISS" : "Dismiss",
+        "SAVE_CONFIRM_TITLE" : "Save Setting?",
+        "SAVE_CONFIRM_TEXT" : "All Change of your setting will be updated.",
+        "SAVE_CONFIRM_ARIA" : "Save Setting",
+        "EDIT_SUCCESS" : "Setting has been changed success",
+        "YES" : "Yes",
+        "NO" : "No"
+    }
+}

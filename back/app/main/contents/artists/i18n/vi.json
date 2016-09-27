@@ -1,0 +1,51 @@
+{
+    "ARTISTS": {
+        "ARTIST_NAV": "Nghệ Sĩ",
+        "ARTIST_TITLE": "Danh Sách Nghệ Sĩ",
+        "ARTIST_DETAIL" : "Chi Tiết Nghệ Sĩ",
+        "BASIC_INFO" : "Thông Tin Cơ bản",
+        "ARTIST_IMAGE" : "Ảnh",
+        "EXTRA_INFORMATION" : "Thông Tin Thêm",
+        "SEO" : "SEO",
+        "FIRST_NAME" : "Họ và tên đệm",
+        "LAST_NAME" : "Tên",
+        "FULL_NAME" : "Tên đầy đủ",
+        "DESCRIPTION" : "Kinh Nghiệm",
+        "DATE_OF_BIRTH" : "Ngày Sinh",
+        "SAVE" : "Lưu",
+        "INVALID_BIRTH_DAY" : "Định dạng ngày sai",
+        "REQUIRED" : "Xin hãy nhập thông tin",
+        "ARTIST_TYPE" : "Loại Nghệ Sĩ",
+        "MUSIC_CATEGORY" : "Thể loại nhạc",
+        "HEIGHT" : "Chiều Cao",
+        "WAIST" : "Vòng Eo",
+        "HIPS" : "Vòng Hông",
+        "HAIR" : "Màu Tóc",
+        "BUST" : "Vòng Ngực",
+        "UPLOAD_DESCRIPTION" : "Kéo và thả ảnh của bạn vào đây để tải lên (PNG, JPG)",
+        "UPLOAD_BTN" : "Tải Ảnh Lên",
+        "REMOVE_IMAGE_SUCCESS" : "1 ảnh đã bị xoá",
+        "YES" : "Có",
+        "NO" : "Không",
+        "REMOVE_IMAGE_TITLE" : "Bạn có chắc chắn muốn xoá ảnh này?",
+        "REMOVE_IMAGE_TEXT" : "Ảnh {{ image_name }} sẽ bị xoá vào thùng rác.",
+        "REMOVE_IMAGE_ARIA" : "Xoá Ảnh",
+         "UPDATE_ARTIST_TITLE" : "Cập Nhật Thông Tin Nghệ Sĩ?",
+        "UPDATE_ARTIST_TEXT" : "Nghệ sĩ {{ artist_name }} sẽ được cập nhật theo thông tin đã được nhập.",
+        "UPDATE_ARTIST_ARIA" : "Cập nhật thông tin nghệ sĩ",
+        "UPDATE_ARTIST_SUCCESS" : "Nghệ sĩ {{ artist_name }} đã được cập nhật thành công",
+        "ARTIST_VIDEO" : "Video",
+        "REMOVE_IMAGE" : "Xoá Tập Tin",
+        "SET_AS_AVATAR" : "Đặt làm ảnh đại diện",
+        "VIDEO_LINK" : "Video Link",
+        "SEO_DATA" : {
+            "KEYWORDS" : "Từ khoá",
+            "META" : "Meta"
+        },
+        "ERRORS" : {
+            "INTERNAL_SERVER_ERROR" : "Có lỗi xảy ra với hệ thống. Xin hãy liên hệ quản trị viên",
+            "INVALID_URL" : "Định dạng đường link sai"
+        },
+        "DISMISS" : "Đóng"
+    }
+}

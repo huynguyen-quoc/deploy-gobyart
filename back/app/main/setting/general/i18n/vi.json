@@ -1,0 +1,22 @@
+{
+    "SETTING_GENERAL": {
+        "SETTING_GENERAL_NAV": "Cấu Hình Chung",
+         "PAGE_TITLE" : "Cấu Hình Chung",
+        "PAGE_TITLE_DETAIL" : "Cấu Hình Chung cho hệ thống",
+        "NAME" : "Tên",
+        "KEYWORD" : "Từ khoá",
+        "COPY_RIGHT" : "Bản quyền",
+        "YOUTUBE_HOME" : "Video Youtube Trang chủ",
+        "FACEBOOK" : "Facebook ID",
+        "YOUTUBE_CHANNEL" : "YouTube Channel ID",
+        "EMAIL_ADDRESS" : "Địa chỉ email",
+        "URL" : "URL",
+        "SAVE" : "Lưu",
+        "SAVE_CONFIRM_TITLE" : "Lưu thông tin?",
+        "SAVE_CONFIRM_TEXT" : "Thông tin thay đổi sẽ được cập nhật vào hệ thống",
+        "SAVE_CONFIRM_ARIA" : "Lưu thông tin",
+        "EDIT_SUCCESS" : "Thông tin đã được cập nhật thành công",
+        "YES" : "Có",
+        "NO" : "Không"
+    }
+}

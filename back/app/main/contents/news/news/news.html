@@ -1,0 +1,103 @@
+<div id="news" class="page-layout simple tabbed" layout="column">
+    <!--<form name="formnews" autocomplete="off" novalidate>-->
+    <!-- HEADER -->
+    <div class="header md-accent-bg" layout="row" layout-align="start center">
+        <div class="white-fg" layout="row" layout-align="start center" flex>
+            <md-button class="goto-news-button md-icon-button" aria-label="Go to list news"
+                       ng-click="vm.goBack()"
+                       translate translate-attr-aria-label="NEWS.GO_BACK_NEWS">
+                <md-icon md-font-icon="icon-arrow-left"></md-icon>
+            </md-button>
+
+            <div layout="row" layout-align="start center">
+                <div class="news-image" hide-xs>
+                    
+                    <img ng-src="{{ (!vm.news.image || vm.news.image.file_id === '') ? 'assets/images/avatars/profile.jpg' : ((vm.isNew || vm.news.image.changed) ? 'api/v1/temp/' : 'api/v1/upload/') + vm.news.image.file_id + '.' + vm.news.image.extension }}">
+                </div>
+
+                <div layout="column" layout-align="start start">
+                    <div class="h2 capitalize">
+                        {{vm.news.title}}
+                    </div>
+                    <div class="subtitle secondary-text">
+                        <span translate="NEWS.NEWS_DETAIL">News Detail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+             <md-button class="md-raised md-background" ng-click="vm.openImageDialog($event)">
+                <span translate="NEWS.SET_IMAGE_NEWS">SET IMAGES NEWS</span>
+            </md-button>
+            <md-button class="md-raised md-background" ng-click="vm.update($event)" ng-if="!vm.isNew">
+                <span translate="NEWS.SAVE">SAVE</span>
+            </md-button>
+               <md-button class="md-raised md-background" ng-click="vm.insert($event)" ng-if="vm.isNew">
+                <span translate="NEWS.SAVE">SAVE</span>
+            </md-button>
+        </div>
+    </div>
+    <md-toolbar class="tab-toolbar" md-scroll-shrink="">
+        <md-tabs md-selected="vm.currentTab">
+            <md-tab>
+                <md-tab-label>
+                     <span translate="NEWS.SHORT_INFO">Short Info</span>
+                </md-tab-label>
+            </md-tab>
+            <md-tab>
+                <md-tab-label>
+                   <span translate="NEWS.CONTENT_INFO">Content</span>
+                </md-tab-label>
+            </md-tab>
+        </md-tabs>
+    </md-toolbar>
+    <!-- / HEADER -->
+     <!--<div class="toolbar animate-slide-down" layout="row" layout-align="space-between center" ng-if=" vm.currentTab === 1 ||  vm.currentTab === 2">
+         <span flex="" ></span>
+        <div layout="row" layout-align="end end" >
+            <md-button class="md-icon-button arrow" aria-label="Remove Image" ng-if="vm.selectedImage && vm.currentTab === 1 && vm.selectedImage.file_type === 'image'" ng-click="vm.deleteImage($event)" >
+            <md-icon md-font-icon="icon-delete"></md-icon>
+                <md-tooltip><span translate="news.REMOVE_IMAGE">Remove File</span></md-tooltip>
+            </md-button>
+            <md-button class="md-icon-button arrow" aria-label="Remove Image" ng-if="vm.selectedImage && vm.currentTab === 2 && vm.selectedImage.file_type === 'video_link'" ng-click="vm.deleteImage($event)" >
+            <md-icon md-font-icon="icon-delete"></md-icon>
+                <md-tooltip><span translate="news.REMOVE_IMAGE">Remove File</span></md-tooltip>
+            </md-button>
+             <md-button class="md-icon-button arrow" aria-label="Set As Avatar"  ng-if="vm.selectedImage && vm.currentTab === 1 && vm.selectedImage.file_type === 'image'" ng-click="vm.setAsNewAvatar($event)" >
+                <md-icon md-font-icon="icon-file-image-box"></md-icon>
+                <md-tooltip><span translate="news.SET_AS_AVATAR">Set As Avatar</span></md-tooltip>
+            </md-button>
+        </div>
+    </div>
+ -->
+     
+    <!-- CONTENT -->
+    <div class="content scrollable" ms-scroll>
+        <!-- MAIN -->
+            <md-tabs md-dynamic-height class="no-tab-panel"  md-selected="vm.currentTab">
+                <md-tab>
+                    <md-tab-body>
+                        <div class="news-detail-form-container md-background-bg md-whiteframe-1dp">
+                                <div class="info-tab"
+                                    ng-include="'app/main/contents/news/news/tabs/general-tab.html'">
+                                </div>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+
+                <md-tab>
+                    <md-tab-body>
+                        <div class="news-detail-form-container md-background-bg md-whiteframe-1dp">
+                            <div class="seo-tab"
+                                    ng-include="'app/main/contents/news/news/tabs/content-tab.html'">
+                                </div>
+                        </div>
+                    </md-tab-body>
+                </md-tab>
+
+            </md-tabs>
+    </div>
+    <!-- / CONTENT -->
+    
+</div>

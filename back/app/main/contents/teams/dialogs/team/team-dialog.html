@@ -1,0 +1,126 @@
+<!-- DIALOG -->
+<md-dialog class="team-dialog" aria-label="New Task">
+
+    <form name="teamForm" class="md-inline-form" novalidate autocomplete="off">
+
+        <!-- DIALOG TOOLBAR -->
+        <md-toolbar class="md-accent" layout="column">
+
+            <!-- TOOLBAR TOP -->
+            <div class="md-toolbar-tools md-toolbar-tools-top" layout="row" layout-align="space-between center">
+                <span class="title capitalize">{{vm.title}}</span>
+                <md-button class="md-icon-button" ng-click="vm.closeDialog()" aria-label="Close dialog" translate
+                           translate-attr-aria-label="TEAMS.CLOSE_DIALOG">
+                    <md-icon md-font-icon="icon-close"></md-icon>
+                </md-button>
+            </div>
+            <!-- / TOOLBAR TOP -->
+
+            <!-- TOOLBAR MIDDLE -->
+            <!--<div class="md-toolbar-tools md-toolbar-tools-middle" flex layout="column" layout-align="center center">
+                <div layout="row" layout-align="center center">
+                    <a class="image-avatar" ng-click="vm.openImageDialog()">
+                        <img ng-src="{{ (!vm.team.avatar || vm.team.avatar.file_id === '') ? 'assets/images/avatars/profile.jpg' : ((vm.team.avatar.changed) ? 'api/v1/temp/' : 'api/v1/upload/') + vm.team.avatar.file_id + '.' + vm.team.avatar.extension }}" class="md-avatar avatar team-avatar"
+                            alt="{{vm.team.team_name}}"/>
+                        <span class="image_change" translate="TEAMS.CHANGE_IMAGE">Change</span>
+                    </a>
+                   
+                </div>
+                 <div class="team-name capitalize">{{vm.team.team_name}}</div>
+            </div>-->
+            <!-- / TOOLBAR MIDDLE -->
+
+
+        </md-toolbar>
+         <md-toolbar class="tab-toolbar">
+            <md-tabs md-selected="vm.currentTab">
+                <md-tab>
+                   <md-tab-label>
+                      <span translate="TEAMS.BASIC_INFORMATION">Basic Info</span>
+                  </md-tab-label>
+                </md-tab>
+                <md-tab>
+                  <md-tab-label>
+                     <span translate="TEAMS.AVATAR">Avatar</span>
+                 </md-tab-label>
+               </md-tab>
+            </md-tabs>
+        </md-toolbar>
+        <!-- / DIALOG TOOLBAR -->
+        
+
+        <!-- DIALOG CONTENT -->
+        <md-dialog-content>
+             <md-tabs md-dynamic-height="false" class="no-tab-panel"  md-selected="vm.currentTab" >
+                    <md-tab>
+                      <md-tab-body>
+                          <md-content class="general-tab">
+                            <md-input-container class="md-icon-float md-block">
+                                <label translate="TEAMS.NAME">Name </label>
+                                <md-icon md-font-icon="icon-account"></md-icon>
+                                <input ng-model="vm.team.team_name" type="text" class="capitalize" required md-autofocus>
+                            </md-input-container>
+
+                            <md-input-container class="md-icon-float md-block">
+                                <label translate="TEAMS.POSITION">Position</label>
+                                <md-icon md-font-icon="icon-account-multiple" ></md-icon>
+                                <input ng-model="vm.team.position" type="text" class="capitalize" required>
+                            </md-input-container>
+                          </md-content>
+                      </md-tab-body>
+                    </md-tab>
+                    <md-tab>
+                      <md-tab-body >
+                              <md-content class="avatar-tab"  layout-xs="column" layout="row">
+                                  <md-card flex="50"  layout="column" >
+                                        <img ng-src="{{ (!vm.team.avatar || vm.team.avatar.file_id === '') ? 'assets/images/avatars/profile.jpg' : ((vm.team.avatar.changed) ? 'api/v1/temp/' : 'api/v1/upload/') + vm.team.avatar.file_id + '.' + vm.team.avatar.extension }}" class="md-card-image">
+                                    <md-card-actions layout="row" layout-align="end center">
+                                        <md-button class="md-icon-button" aria-label="Switch Avatar" ng-click="vm.openImageDialog()">
+                                            <md-icon md-font-icon="icon-account-switch"></md-icon>
+                                        </md-button>
+                                        </md-card-actions>
+                                    </md-card>
+                            </md-content>
+                            
+                      </md-tab-body>
+                    </md-tab>
+             </md-tabs>
+          
+
+        </md-dialog-content>
+        <!-- / DIALOG CONTENT -->
+
+        <!-- DIALOG ACTIONS -->
+        <md-dialog-actions layout="row" layout-align="space-between center">
+            <div layout="row" layout-align="start center">
+                <md-button type="submit" ng-if="!vm.isNew" ng-click="vm.save($event)"
+                           class="send-button md-accent md-raised"
+                           ng-disabled="teamForm.$invalid || teamForm.$pristine || vm.$$submit"
+                           aria-label="Save Team" translate="TEAMS.SAVE" translate-attr-aria-label="TEAMS.SAVE">
+                    SAVE
+                </md-button>
+
+                <md-button type="submit" ng-if="vm.isNew" ng-click="vm.add($event)"
+                           class="send-button md-accent md-raised"
+                           ng-disabled="teamForm.$invalid || teamForm.$pristine || vm.$$submit"
+                           aria-label="Add Team" translate="TEAMS.ADD"
+                           translate-attr-aria-label="TEAMS.ADD">
+                    ADD
+                </md-button>
+
+            </div>
+
+            <div layout="row">
+                <md-button class="md-icon-button" ng-click="vm.remove($event)" aria-label="Delete"
+                           translate translate-attr-aria-label="TEAMS.DELETE">
+                    <md-icon md-font-icon="icon-delete"></md-icon>
+                    <md-tooltip><span translate="TEAMS.DELETE">DELETE</span></md-tooltip>
+                </md-button>
+            </div>
+        </md-dialog-actions>
+        <!-- / DIALOG ACTIONS -->
+
+    </form>
+
+</md-dialog>
+<!-- / DIALOG -->
