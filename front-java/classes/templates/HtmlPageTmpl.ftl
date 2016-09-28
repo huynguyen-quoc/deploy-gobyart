@@ -31,9 +31,9 @@
 <!-- SPLASH SCREEN -->
 <ms-splash-screen id="splash-screen">
     <div class="center">
-        <div class="logo">
-            <span>G</span>
-        </div>
+        <#--<div class="logo">-->
+            <#--<span>G</span>-->
+        <#--</div>-->
         <!-- Material Design Spinner -->
         <div class="spinner-wrapper">
             <div class="spinner">

@@ -1,8 +1,6 @@
 {
-    "DASHBOARD": {
-        "DASHBOARD_NAV": "Dashboard",
-        "AFTERNOON" : "Good Afternoon",
-        "MORNING" : "Good Morning",
-        "EVENING" : "Good Evening"
+    "HOME": {
+        "ADD_SHORT_LIST" : "ADD TO SHORTLIST",
+        "REMOVE_SHORT_LIST" : "REMOVED TO SHORTLIST"
     }
 }

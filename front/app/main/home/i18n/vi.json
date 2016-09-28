@@ -1,8 +1,6 @@
 {
-    "DASHBOARD": {
-        "DASHBOARD_NAV": "Trang chủ",
-        "AFTERNOON" : "Chào Buổi Chiều",
-        "MORNING" : "Chào Buổi Sáng",
-        "EVENING" : "Chào Buổi Tối"
+    "HOME": {
+         "ADD_SHORT_LIST" : "TÔI CHỌN BẠN",
+        "REMOVE_SHORT_LIST" : "HỦY CHỌN"
     }
 }
