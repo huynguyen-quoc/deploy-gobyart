@@ -21,7 +21,7 @@
         <property name="expiresJWT" value="${server.jwtExpires}"/>
         <property name="fileFileData" value="${server.file.fileData}"/>
         <property name="fileTemp" value="${server.file.temp}"/>
-        <property name="fileUploads" value="${server.file.fileUpload"/>
+        <property name="fileUploads" value="${server.file.fileUpload}"/>
 
     </bean>
 
