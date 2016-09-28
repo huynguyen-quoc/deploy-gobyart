@@ -13,9 +13,9 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <title>{{ (!siteOption.page_title) ? siteOption.SITE_NAME : siteOption.page_title }}</title>
 
-    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/vendor-9ada4a72e0.css">
 
-    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/app-3a7d9ab9f3.css">
 
     <link href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic" rel="stylesheet" type="text/css">
 </head>
@@ -59,7 +59,7 @@
 
 <!--<ms-theme-options></ms-theme-options>-->
 
-<script src="scripts/vendor.js"></script>
+<script src="scripts/vendor-594ef3d930.js"></script>
 <script type="text/javascript">
     $.fn.inView = function(){
         var viewport = {};
@@ -74,7 +74,7 @@
     window.site_option = "${context.site_option}";
     </#if>
 </script>
-<script src="scripts/app.js"></script>
+<script src="scripts/app-60fe35c5e3.js"></script>
 
 
 </body>
