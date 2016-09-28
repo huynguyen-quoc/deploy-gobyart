@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>Goby Art Management System</title>
 
-    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/vendor-a1080fad73.css">
 
-    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/app-be4ace72cc.css">
 
     <link href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700italic,700,900,900italic" rel="stylesheet" type="text/css">
 </head>
@@ -52,9 +52,9 @@
     window.activeProfile = '${context.active_profile}';
 </script>
 </#if>
-<script src="scripts/vendor.js"></script>
+<script src="scripts/vendor-f847d10917.js"></script>
 
-<script src="scripts/app.js"></script>
+<script src="scripts/app-6f9637f442.js"></script>
 
 </body>
 </html>
